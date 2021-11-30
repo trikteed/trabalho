@@ -1,0 +1,81 @@
+<body class="container-fluid">
+  <header>
+    <div class="row">
+      <h1 class="text-center">Calculadora de Ações</h1>
+      <p class="text-center">Esta calculadora irá calcular lucro em potencial baseado nos parametros que tu colocar aqui.</p>
+    </div>
+  </header>
+
+  <div class="container container-fluid">
+    <div class"input">
+      <form class="well well-lg">
+        <div class="text-center">
+
+          <div class="input-group">
+
+            <span class="input-group-addon">$</span>
+            <input type="number" name="userAccount" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="Saldo da conta" id="userAccount">
+            <span class="input-group-addon">.00</span>
+          </div>
+
+          <div class="input-group">
+
+            <span class="input-group-addon">$</span>
+            <input type="number" name="entryPrice" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="Preço da Ação" id="entryPrice">
+            <span class="input-group-addon">.00</span>
+          </div>
+
+          <button id="enter" class="btn btn-primary btn-lg btn-block" href="#calculate">Calcular</button>
+
+        </div>
+      </form>
+    </div>
+    <div class="output table-responsive well well-lg" name="display" id="outputSection">
+
+      <div id="outputList" class="table table-bordered">
+
+        <div class="active">
+          <section><h4 class="text-center">Valor permitido para trade</h4></section>
+          <section id="allowedPerTrade" class="text-center"></section>
+        </div>
+
+        <div class="active">
+          <section><h4 class="text-center">Quantidade de ações para trade</section>
+          <section id="sharesPerTrade" class="text-center"></section>
+        </div>
+
+        <div class="success">
+          <section><h4 class="text-center">Teto de preços para trading</h4></section>
+          <section id="targetLimit" class="text-center"></section>
+        </div>
+
+        <div class="warning">
+          <section><h4 class="text-center">Segurar o preço da trading</h4></section>
+          <section id="targetStop" class="text-center"></section>
+        </div>
+
+        <div class="success">
+          <section><h4 class="text-center">Lucro possível</h4></section>
+          <section id="possibleProfit"class="text-center"></section>
+        </div>
+
+        <div class="danger">
+          <section><h4 class="text-center">Prejuízo possivel</h4></section>
+          <section id="possibleLoss" class="text-center"></section>
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <footer>
+    <p>Eu pré-determinei o risco x recompensa em 3:1, com base em como eu pessoalmente gerencio o risco por negociação.</p>
+    <p>Essa calculadora não é garantia de resultados e é calculada com base em suas entradas. Siga esta calculadora por sua própria conta e risco. É seu dinheiro e sua responsabilidade</p>
+
+  </footer>
+
+</body>
+</html>
